@@ -1,99 +1,30 @@
-# EdCation3 - Descomplicando a Web3
+# Projeto Inteli Junior - Plataforma de Gestão de Projetos
 
-![logo](./logo.png)
+## Descrição
+O projeto visa o desenvolvimento de uma **landing page institucional** e uma **plataforma web** para gerenciar os projetos e otimizar a comunicação interna e externa da **Inteli Junior**. A plataforma permitirá o acompanhamento de projetos por clientes e facilitará a gestão de membros e diretores através de funcionalidades personalizadas conforme o perfil de usuário.
 
-## Introdução
-EdCation3 é uma plataforma criada para alavancar as conexões no mundo profissional web3 e democratizar o acesso ao conhecimento em blockchain e criptoativos. Nela, usuários interessados em aprender sobre web3 recebem conteúdo gratuito e gamificado, ao passo que podem aprimorar sua experiência e entrar no banco de talentos profissionais da plataforma. Por outro lado, empresas e startups que necessitam de talentos qualificados de forma rápida e fácil podem acessar o banco de profissionais da plataforma e criar conexões de trabalho. Qualificando estudantes e aumentando a confiança e rapidez de contratações, planejamos auxiliar e criar novas oportunidades acadêmicas, profissionais e sociais através da Blockchain.
+## Objetivos
+- **Fortalecer a presença digital** da Inteli Junior com uma landing page institucional.
+- **Centralizar a gestão de projetos** e comunicação entre os diferentes níveis de usuários (presidência, diretores, membros e clientes).
+- **Facilitar o acompanhamento do andamento de projetos** pelos clientes e membros da empresa júnior.
 
-## Features
-- Conteúdo educacional gratuito
-- Tracks educacionais técnicas
-- Gamificação
-- Banco de talentos & Headhunting
+## Funcionalidades
+### 1. Inteli Junior:
+- Cadastro e login com diferentes níveis de permissão (presidência, diretores e membros)
+- Painel administrativo para presidência e diretores gerenciarem dados e equipes
+- Visualização do andamento dos projetos com status, entregáveis e responsáveis
+- Edição e alimentação de dados pelos membros diretamente na plataforma
+- Gestão de usuários e permissões conforme as áreas da empresa
 
-## Instalação 
-### Back-end e Blockchain
-1. Pré-requisitos:
-- Possuir o Docker e WSL2/uma distribuição linux instalados em seu computador
+### 2. Clientes:
+- Cadastro e login para acompanhar o progresso dos projetos contratados
+- Acesso à landing page institucional com informações sobre a empresa, serviços, projetos realizados, equipe e formas de contato
 
-2. Instale o Rust
-- ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+## Tecnologias Utilizadas
+- **Wireframe**: Projetado usando o Figma.
 
-3. Instale uma IDE (recomendamos utilizar o VSCode, o qual pode ser instalado no link abaixo)
-- https://code.visualstudio.com/
-
-4. Instale o Foundry
-- ```curl -L https://foundry.paradigm.xyz | bash```
-
-5. Instale e ative o Nitro devnode
-- ```git clone https://github.com/OffchainLabs/nitro-devnode.git```
-- ```cd nitro-devnode```
-- ```./run-dev-node.sh```
-
-6. Instale o cargo stylus
-- ```cargo install --force cargo-stylus```
-
-7. Adicione o WASM
-- ```rustup default 1.80```
-- ```rustup target add wasm32-unknown-unknown --toolchain 1.80```
-
-### Front-end
-
-1. Instale as dependências necessárias
-- ```npm install```
-
-2. Rode a aplicação web
-- ```npm start```
-
-## Estrutura de pastas
-
-```
-HACKATHON-BH
-├── certificado-nft
-│   └── ...
-├── client
-│   └── ...
-├── scroll
-|   └── ...
-├── token-smd
-|   └── ...
-├── README.MD
-│   
-```
-
-- certificado-nft
-    - Pasta com o projeto certificado como nft emitido na Arbitrum com Arbitrum Stylus
-- client
-    - Pasta com projeto React
-- scroll
-    - Pasta com NFTs emitidos na Scroll
-- token-smd
-    - Pasta com o projeto token simulador (SMD) como erc-20 emitido na Arbitrum com Arbitrum Stylus
-
-## Tech Stacks
-
-### Backend & Blockchain
-
-#### Blockchains
-- Scroll
-- Arbitrum
-
-#### Pacotes externos
-- rustup
-- rustc
-- cargo
-
-### Front-end
-
-#### Pacotes externos
-- React
-
-## Roadmap
-Planejamos implementar outras funcionalidades ao pensar no projeto a longo prazo, sendo elas:
-- Criação de match-making com IA entre empresas interessadas e candidatos;
-- Criação de programas B2B de capacitação para colaboradores de empresas parceiras;
-- Desenvolvimento de trilhas educacionais e técnicas voltadas para negócios e criptoativos;
-- Desenvolvimento de projetos mensais entre empresas e alunos da plataforma;
-
-## Agradecimentos
-Um agradecimento especial à equipes de organização do Modular Carnival e a Arbitrum e Scroll pela oportunidade. 
+## Integrantes do Projeto
+- **Leunam Sousa**
+- **Christian Santos**
+- **Felipe Teixeira**
+- **João Dias**
