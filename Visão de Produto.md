@@ -4,27 +4,25 @@ sidebar_position: 1
 
 # 📄 Visão de Produto
 
-<!-- Este documento deve ser preenchido pela área de Visão de Produto para cada novo projeto. -->
-
 ## 🗓 Informações Gerais
 
 - **Nome do Projeto:** 
-<!-- Exemplo: Sistema de Gestão de Reservas para Biblioteca -->
+InteliHub – Plataforma de gestão e acompanhamento tanto do cliente quanto da Inteli Júnior.
 
 - **Cliente:** 
-<!-- Exemplo: Faculdade XYZ - Departamento de Biblioteconomia -->
+Inteli Júnior
 
 - **Responsável da Visão de Produto (PO):**
-<!-- Nome da pessoa responsável pelo acompanhamento e comunicação com o cliente -->
+João Dias e Felipe Teixeira
 
 - **Duração Total Estimada:** 
-<!-- Exemplo: 10 semanas -->
+1 semana
 
 - **Período na Etapa de Design (estimado):** 
-<!-- Exemplo: 2 semanas -->
+3 dias
 
 - **Período na Etapa de Desenvolvimento (estimado):** 
-<!-- Exemplo: 8 semanas -->
+4 dias
 
 ---
 
@@ -35,7 +33,7 @@ sidebar_position: 1
 - [ ] Tecnologias necessárias mapeadas
 - [ ] Estimativa de esforço feita
 - [ ] Capacidade do time verificada
-- [ ] Escopo inicial aprovado pelo cliente
+- [ ] Escopo inicial do wireframe aprovado pelo cliente
 
 ---
 
@@ -53,34 +51,43 @@ sidebar_position: 1
 
 ## 📘 Resumo do Projeto
 
-<!-- Explique brevemente o que é o projeto, sua motivação, e o problema que resolve. -->
+O projeto visa criar **2 entregáveis de valor**:
+1. Uma **landing page institucional** para apresentar o que é e como funciona a Inteli Júnior ao público externo.
+2. Uma **plataforma web** para uso de Diretores, Membros, Leads e Clientes. Com o foco em gestão de projetos e acompanhamento de equipe e entregas.
+
+O projeto surgiu da necessidade de fortalecer a presença digital da empresa e organizar os processos internos. A solução proposta resolve problemas como a falta de visibilidade online, a gestão descentralizada de informações e a baixa integração entre áreas, oferecendo um sistema eficiente e acessível para clientes, membros e gestores.
 
 **Descrição:**
-<!-- Exemplo: Desenvolver um sistema web para gerenciar as reservas de salas e equipamentos da biblioteca da Faculdade XYZ. -->
+Desenvolver uma landing page institucional e uma plataforma web para centralizar a gestão de projetos, equipes e comunicação da empresa júnior Inteli Junior, atendendo tanto ao público externo quanto aos membros internos.
 
 **Objetivos:**
-<!-- Exemplo: Digitalizar o processo de reservas, aumentar o controle de disponibilidade, facilitar a comunicação com os usuários. -->
+Fortalecer a presença digital da Inteli Junior, centralizar a gestão de projetos e equipes em um só lugar, e facilitar a comunicação entre membros, diretores e clientes.
 
 **Público-Alvo:**
-<!-- Exemplo: Alunos e funcionários da biblioteca. -->
+Inteli Junior (equipe interna), clientes atuais e potenciais interessados nos serviços da empresa.
 
 ## 👤 Personas
 
-<!-- 
-Liste aqui as personas envolvidas no uso da aplicação. Não é necessário criar nomes fictícios ou descrições elaboradas — o objetivo é identificar os tipos de usuários que interagem com o sistema, suas funções ou necessidades principais.
+1. Inteli Junior:
+   a) Presidência (presidente e vice): Acessam a plataforma como administradores gerais e gerenciam a permissão de todos os membros e configurações da plataforma. 
+   b) Diretores: Acessam a plataforma para controlar  os  dados, gerir os membros de seus setores e visualizar andamento dos projetos.
+   c) Membros: Acessam a plataforma para alimentar os dados dos projetos e gerenciar tanto seu trabalho indivdual quanto atualizar os outros respectivos membros e diretores da sua área sobre o andamento do projeto
 
-Exemplos:
-- Aluno: acessa o sistema para reservar salas e consultar reservas.
-- Funcionário da Biblioteca: administra reservas e atualiza a disponibilidade.
-- Professor: visualiza dados de alunos e solicita salas para atividades.
--->
+2. Clientes:
+   a) Atuais: Acompanham o andamento do projeto pela plataforma de forma visual, com informações sobre entregáveis e membros responsáveis.
+   b) Potenciais: Descobrem o que é a inteli júnior pela landing page, visualizando provas sociais, projetos entregues e quem são os responsaveis pela empresa júnior.
 
 **Principais Funcionalidades:**
-<!-- Exemplo:
-- Cadastro e login de usuários
-- Reserva de equipamentos
-- Notificações por e-mail
-- Painel administrativo -->
+1. Inteli Júnior:
+    - Cadastro e login com diferentes níveis de permissão (presidência, diretores e membros).
+    - Painel administrativo para presidência e diretores gerenciarem dados e equipes.
+    - Visualização do andamento dos projetos com status, entregáveis, responsáveis.
+    - Atualização de informações pelos membros diretamente na plataforma.
+    - Gerenciamento de usuários e permissões conforme as áreas da empresa
+
+2. Clientes:
+    - Cadastro e login para acompanhamento do projeto contratado.
+    - Acesso a landing page institucional com informações sobre a empresa, serviços, projetos, formas de contato e equipe.
 
 ---
 
