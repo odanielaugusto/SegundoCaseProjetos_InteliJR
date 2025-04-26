@@ -51,22 +51,52 @@ João Dias e Felipe Teixeira
 
 ## 📘 Resumo do Projeto
 
-O projeto visa criar **2 entregáveis de valor**:
-1. Uma **landing page institucional** para apresentar o que é e como funciona a Inteli Júnior ao público externo.
-2. Uma **plataforma web** para uso de Diretores, Membros, Leads e Clientes. Com o foco em gestão de projetos e acompanhamento de equipe e entregas.
+### Projeto: Landing Page Institucional e Plataforma Web - Inteli Júnior
 
-O projeto surgiu da necessidade de fortalecer a presença digital da empresa e organizar os processos internos. A solução proposta resolve problemas como a falta de visibilidade online, a gestão descentralizada de informações e a baixa integração entre áreas, oferecendo um sistema eficiente e acessível para clientes, membros e gestores.
+#### Entregáveis de Valor
 
-**Descrição:**
-Desenvolver uma landing page institucional e uma plataforma web para centralizar a gestão de projetos, equipes e comunicação da empresa júnior Inteli Junior, atendendo tanto ao público externo quanto aos membros internos.
+1. **Landing Page Institucional**  
+   - Objetivo: Apresentar a Inteli Júnior ao público externo, explicando o que é a empresa e como ela funciona.
 
-**Objetivos:**
-Fortalecer a presença digital da Inteli Junior, centralizar a gestão de projetos e equipes em um só lugar, e facilitar a comunicação entre membros, diretores e clientes.
+2. **Plataforma Web**  
+   - Objetivo: Ferramenta para Diretores, Membros, Leads e Clientes focada em:
+     - Gestão de projetos
+     - Acompanhamento de equipes e entregas
 
-**Público-Alvo:**
-Inteli Junior (equipe interna), clientes atuais e potenciais interessados nos serviços da empresa.
+#### Contexto
 
-## 👤 Personas
+O projeto surgiu da necessidade de:
+- Fortalecer a presença digital da empresa
+- Organizar e centralizar processos internos
+- Resolver problemas como:
+  - Falta de visibilidade online
+  - Gestão descentralizada de informações
+  - Baixa integração entre áreas
+
+A solução proposta oferecerá um sistema eficiente e acessível para clientes, membros e gestores.
+
+#### Descrição
+
+Desenvolver:
+- **Uma landing page institucional** para apresentar a Inteli Júnior ao público externo
+- **Uma plataforma web** para centralizar:
+  - Gestão de projetos
+  - Gestão de equipes
+  - Comunicação interna da empresa júnior
+
+#### Objetivos
+
+- Fortalecer a presença digital da Inteli Júnior
+- Centralizar a gestão de projetos e equipes
+- Facilitar a comunicação entre membros, diretores e clientes
+
+#### Público-Alvo
+
+- Equipe interna da Inteli Júnior (Diretores, Membros e Leads)
+- Clientes atuais
+- Potenciais clientes interessados nos serviços da empresa
+
+#### 👤 Personas
 
 1. Inteli Junior:
    a) Presidência (presidente e vice): Acessam a plataforma como administradores gerais e gerenciam a permissão de todos os membros e configurações da plataforma. 
@@ -131,34 +161,292 @@ Essa matriz é útil para orientar as conversas com o cliente, levantar riscos, 
 ---
 
 
-## 🧱 Epics e User Stories
 
-### 🔹 Epics
 
-<!-- Exemplo: -->
-- Epic 1: Gerenciamento de Usuários
-- Epic 2: Sistema de Reservas
-- Epic 3: Notificações e Alertas
-- Epic 4: Relatórios
 
-### 🔸 User Stories
-
-<!-- Exemplo de User Story: -->
-#### US1
-- **Usuário:** Como um aluno
-- **Objetivo:** Quero reservar uma sala de estudo
-- **Justificativa:** Para garantir que terei um espaço disponível no horário desejado
-
-<br/>
-
-#### US2
-- **Usuário:** Como um professor
-- **Objetivo:** Quero ver os alunos da minha turma
-- **Justificativa:** Para garantir que consigo acompanhá-los granularmente durante o ano letivo
-
-<!-- Repetir para cada funcionalidade importante -->
+# Épicos e User Stories - Plataforma Inteli Junior
 
 ---
+
+## Epic 1: Gestão de Projetos (Diretor de Projetos)
+
+**Descrição:**  
+Como diretor de projetos, quero um ambiente para gerenciar projetos da minha área, para que as informações sejam acessíveis à equipe, à empresa e aos clientes.
+
+### User Stories:
+
+**US 1.1 - Criar Projeto**  
+- Como diretor de projetos, quero criar projetos preenchendo nome, descrição, tipo, links relevantes, membros, data de entrega e cliente associado.
+
+**Critérios de Aceite:**
+- Formulário de criação com todos os campos listados.
+- Validação obrigatória para campos essenciais (nome, tipo e data de entrega).
+- Opção de salvar e visualizar projeto após cadastro.
+
+**US 1.2 - Editar Projeto**  
+- Como diretor de projetos, quero editar as informações dos projetos já cadastrados.
+
+**Critérios de Aceite:**
+- Edição disponível apenas para projetos ativos.
+- Histórico de modificações salvo.
+
+**US 1.3 - Excluir Projeto**  
+- Como diretor de projetos, quero excluir projetos que não são mais relevantes.
+
+**Critérios de Aceite:**
+- Confirmação de exclusão com alerta.
+- Apenas usuários autorizados podem excluir.
+
+**US 1.4 - Dashboard de Projetos**  
+- Como diretor de projetos, quero visualizar uma dashboard com o status dos projetos.
+
+**Critérios de Aceite:**
+- Visualização de métricas: total de projetos ativos, dentro do prazo, fora do prazo, próximos da entrega e distribuição por tipo.
+- Atualização automática dos dados.
+
+**US 1.5 - Acesso de Clientes**  
+- Como cliente, quero acessar o andamento dos meus projetos por meio de chave de acesso.
+
+**Critérios de Aceite:**
+- Sistema de login por chave.
+- Visualização restrita ao projeto do cliente.
+
+**US 1.6 - Barra de Progresso Automática**  
+- Como usuário, quero visualizar o andamento do projeto com base na data atual e na data de entrega.
+
+**Critérios de Aceite:**
+- Barra de progresso automática atualizada diariamente.
+- Visualização no card do projeto.
+
+---
+
+## Epic 2: Gestão de Parcerias (Diretor de Relações Institucionais)
+
+**Descrição:**  
+Como diretor de relações institucionais, quero cadastrar e gerenciar parcerias e ativações para acompanhar o relacionamento com empresas.
+
+### User Stories:
+
+**US 2.1 - Cadastro de Parceria**  
+- Como diretor, quero registrar novas parcerias com informações sobre a empresa e tipo de relacionamento.
+
+**Critérios de Aceite:**
+- Cadastro de nome da empresa, tipo de parceria, data de início e status.
+
+**US 2.2 - Classificação de Relacionamento**  
+- Como diretor, quero classificar as parcerias como "ativas" ou "inativas".
+
+**Critérios de Aceite:**
+- Status de relacionamento editável.
+- Filtragem de parcerias por status.
+
+**US 2.3 - Visualizar Histórico de Ativações**  
+- Como diretor, quero ver o histórico de ativações realizadas com cada parceiro.
+
+**Critérios de Aceite:**
+- Lista de ativações vinculada ao cadastro do parceiro.
+- Data e descrição da ativação.
+
+---
+
+## Epic 3: Gestão de Pessoas (Diretor de Gestão de Pessoas)
+
+**Descrição:**  
+Como diretor de gestão de pessoas, quero acessar e atualizar as informações de desenvolvimento dos membros.
+
+### User Stories:
+
+**US 3.1 - Visualizar Membros**  
+- Como diretor, quero visualizar uma lista com nome e foto dos membros.
+
+**Critérios de Aceite:**
+- Exibição de todos os membros cadastrados com imagem e nome.
+
+**US 3.2 - Acessar Perfil do Membro**  
+- Como diretor, quero acessar o perfil de cada membro.
+
+**Critérios de Aceite:**
+- Informações disponíveis: objetivos profissionais, habilidades e forças.
+
+**US 3.3 - Atualizar Informações de Desenvolvimento**  
+- Como diretor, quero editar informações do PDI de cada membro.
+
+**Critérios de Aceite:**
+- Formulário de atualização de dados.
+- Histórico de alterações salvo.
+
+---
+
+## Epic 4: Coleta de Métricas e Eficiência (Diretor Administrativo-Financeiro)
+
+**Descrição:**  
+Como diretor administrativo-financeiro, quero visualizar métricas de performance e eficiência das áreas.
+
+### User Stories:
+
+**US 4.1 - Visualizar Métricas de Áreas**  
+- Como diretor, quero acompanhar as métricas de cada área da empresa.
+
+**Critérios de Aceite:**
+- Indicadores claros e atualizados periodicamente.
+
+**US 4.2 - Relatórios de Eficiência**  
+- Como diretor, quero gerar relatórios de performance das áreas.
+
+**Critérios de Aceite:**
+- Relatórios exportáveis em PDF ou Excel.
+
+**US 4.3 - Exportar Relatórios**  
+- Como usuário, quero exportar os dados em formatos compatíveis.
+
+**Critérios de Aceite:**
+- Botão de exportação disponível e funcional.
+
+---
+
+## Epic 5: Gestão Comercial (Diretor de Vendas)
+
+**Descrição:**  
+Como diretor de vendas, quero cadastrar oportunidades, acompanhar clientes em potencial e registrar contratos fechados.
+
+### User Stories:
+
+**US 5.1 - Cadastro de Leads e Oportunidades**  
+- Como diretor, quero cadastrar novos leads e oportunidades de vendas.
+
+**Critérios de Aceite:**
+- Formulário de cadastro de lead com nome, contato e interesse.
+
+**US 5.2 - Atualização de Status de Vendas**  
+- Como diretor, quero atualizar o status das vendas em andamento.
+
+**Critérios de Aceite:**
+- Mudança de status de lead para oportunidade ou contrato fechado.
+
+**US 5.3 - Dashboard de Vendas**  
+- Como diretor, quero visualizar a evolução das vendas no sistema.
+
+**Critérios de Aceite:**
+- Gráficos de conversão e pipeline de vendas.
+
+**US 5.4 - Histórico de Clientes**  
+- Como diretor, quero ver o histórico de vendas para cada cliente.
+
+**Critérios de Aceite:**
+- Visualização de contratos e negociações anteriores.
+
+---
+
+## Epic 6: Gestão Estratégica (Presidente)
+
+**Descrição:**  
+Como presidente, quero visualizar o panorama geral da empresa com métricas estratégicas e status financeiro.
+
+### User Stories:
+
+**US 6.1 - Visualizar Dashboard Executivo**  
+- Como presidente, quero um dashboard resumido de todas as áreas.
+
+**Critérios de Aceite:**
+- KPIs estratégicos exibidos em painel único.
+
+**US 6.2 - Acesso a Relatórios Estratégicos**  
+- Como presidente, quero acessar relatórios completos.
+
+**Critérios de Aceite:**
+- Relatórios segmentados por área.
+
+**US 6.3 - Gestão de Indicadores de Sucesso**  
+- Como presidente, quero acompanhar indicadores-chave.
+
+**Critérios de Aceite:**
+- Atualização periódica e comparativos entre períodos.
+
+---
+
+## Epic 7: Suporte à Gestão Estratégica (Vice-Presidente)
+
+**Descrição:**  
+Como vice-presidente, quero acessar relatórios e indicadores estratégicos para apoiar a presidência.
+
+### User Stories:
+
+**US 7.1 - Visualizar Relatórios de Performance**  
+- Como vice-presidente, quero acompanhar relatórios de performance de cada área.
+
+**Critérios de Aceite:**
+- Relatórios acessíveis em painel restrito.
+
+**US 7.2 - Acesso a Progresso de Projetos-Chave**  
+- Como vice-presidente, quero ver a evolução dos projetos estratégicos.
+
+**Critérios de Aceite:**
+- Exibição de progresso e alertas de risco.
+
+**US 7.3 - Notificações de Riscos Estratégicos**  
+- Como vice-presidente, quero ser notificado sobre projetos críticos.
+
+**Critérios de Aceite:**
+- Sistema de alertas integrado.
+
+---
+
+## Epic 8: Acompanhamento Individual (Membros de Área)
+
+**Descrição:**  
+Como membro de uma área, quero acessar meus projetos e tarefas
+
+### User Stories:
+
+**US 8.1 - Visualizar Meus Projetos/Tarefas**  
+- Como membro, quero acessar rapidamente meus projetos.
+
+**Critérios de Aceite:**
+- Listagem clara e filtros por status.
+
+**US 8.2 - Atualizar Minhas Informações Pessoais**  
+- Como membro, quero atualizar meu perfil e habilidades.
+
+**Critérios de Aceite:**
+- Edição de informações pessoais com histórico.
+
+**US 8.3 - Acessar Meu Plano de Desenvolvimento**  
+- Como membro, quero acompanhar meu próprio PDI.
+
+**Critérios de Aceite:**
+- Visualização e atualização de metas.
+
+---
+
+## Epic 9: Acesso de Clientes Externos
+
+**Descrição:**  
+Como cliente, quero acessar o projeto contratado e acompanhar seu andamento.
+
+### User Stories:
+
+**US 9.1 - Login Seguro com Chave de Acesso**  
+- Como cliente, quero acessar a aplicação de forma segura.
+
+**Critérios de Aceite:**
+- Sistema de autenticação funcional.
+
+**US 9.2 - Visualizar Progresso do Meu Projeto**  
+- Como cliente, quero ver atualizações do projeto.
+
+**Critérios de Aceite:**
+- Timeline de entregas e status atualizado.
+
+**US 9.3 - Visualizar Entregas e Datas Importantes**  
+- Como cliente, quero acompanhar as principais entregas.
+
+**Critérios de Aceite:**
+- Exibição de marcos do projeto.
+
+
+
+---
+
 
 ## ⚙️ Requisitos Funcionais
 
