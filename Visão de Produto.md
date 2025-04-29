@@ -127,9 +127,9 @@ Desenvolver:
 | Categoria  | Descrição |
 |-----------|-----------|
 | **É**     | Uma aplicação web para gestão de projetos internos e acompanhamento de clientes, além de uma landing page institucional.  |
-| **Não É** | Uma ferramenta de comunicação direta como WhatsApp ou e-mail. |
+| **Não É** | Não substitui reuniões estratégicas ou operacionais entre membros da Inteli Júnior. |
 | **Faz**   | Permite cadastro e login de usuários, gestão de permissões, acompanhamento de projetos, edição de dados, visualização de projetos e visibilidade/reconhecimento da Inteli Júnior. |
-| **Não Faz** | Substitui totalmente a comunicação humana entre Inteli Júnior e os clientes ou realiza controle financeiro detalhado (como emissão de faturas e manipulação de dados para calculo como um ERP faria). |
+| **Não Faz** | Substitui totalmente a comunicação humana entre Inteli Júnior e os clientes por meio de videoconferências ou realiza controle financeiro detalhado (como emissão de faturas e manipulação de dados para calculo como um ERP faria). |
 
 </div>
 
@@ -143,7 +143,7 @@ Desenvolver:
 |-------------|--------------------------------------------------------------------------|
 | **Certeza**   | A plataforma deve permitir a gestão de projetos com diferentes níveis de acesso (presidência, diretores, membros, clientes). |
 | **Suposição** | Acreditamos que os clientes usarão principalmente a plataforma para acompanhar o progresso dos projetos, e a landing page será o primeiro ponto de contato. |
-| **Dúvida**    | O dashboard será suficiente para que os clientes se sintam atualizados sobre seus projetos, ou ainda será necessária uma comunicação humana recorrente? |
+| **Dúvida**    | O dashboard será suficiente para que os clientes se sintam atualizados sobre seus projetos, ou ainda será necessária uma comunicação humana via reunião recorrente? |
 
 </div>
 
