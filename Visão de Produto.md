@@ -126,10 +126,10 @@ Desenvolver:
 
 | Categoria  | Descrição |
 |-----------|-----------|
-| **É**     | <!-- Ex: Uma aplicação web acessível por desktop e mobile --> |
-| **Não É** | <!-- Ex: Um aplicativo nativo para celular --> |
-| **Faz**   | <!-- Ex: Permite reservas de salas, equipamentos, exporta relatórios em PDF --> |
-| **Não Faz** | <!-- Ex: Controle de acesso físico aos espaços da biblioteca --> |
+| **É**     | Uma aplicação web para gestão de projetos internos e acompanhamento de clientes, além de uma landing page institucional.  |
+| **Não É** | Uma ferramenta de comunicação direta como WhatsApp ou e-mail. |
+| **Faz**   | Permite cadastro e login de usuários, gestão de permissões, acompanhamento de projetos, edição de dados, visualização de projetos e visibilidade/reconhecimento da Inteli Júnior. |
+| **Não Faz** | Substitui totalmente a comunicação humana entre Inteli Júnior e os clientes ou realiza controle financeiro detalhado (como emissão de faturas e manipulação de dados para calculo como um ERP faria). |
 
 </div>
 
@@ -137,32 +137,15 @@ Desenvolver:
 
 ## 🧠 Matriz de Certezas, Suposições e Dúvidas
 
-<!--
-Esta matriz deve ser utilizada para mapear o que já sabemos com segurança (certezas), o que acreditamos mas ainda precisa ser validado (suposições), e o que ainda não sabemos ou precisa ser investigado (dúvidas).
-
-Ela pode ser preenchida em diferentes momentos:
-- Logo após a reunião de repasse da área de vendas;
-- Durante o processo de elaboração do escopo com o cliente;
-- Sempre que surgirem novas informações relevantes.
-
-Essa matriz é útil para orientar as conversas com o cliente, levantar riscos, validar premissas e organizar pontos pendentes.
--->
-
 <div align="center">
 
 | Tipo        | Descrição                                                                |
 |-------------|--------------------------------------------------------------------------|
-| **Certeza**   | <!-- Ex: O sistema deve ter autenticação via e-mail institucional -->    |
-| **Suposição** | <!-- Ex: Acreditamos que o sistema será usado principalmente via mobile --> |
-| **Dúvida**    | <!-- Ex: O cliente precisa de integração com sistema acadêmico? -->      |
+| **Certeza**   | A plataforma deve permitir a gestão de projetos com diferentes níveis de acesso (presidência, diretores, membros, clientes). |
+| **Suposição** | Acreditamos que os clientes usarão principalmente a plataforma para acompanhar o progresso dos projetos, e a landing page será o primeiro ponto de contato. |
+| **Dúvida**    | O dashboard será suficiente para que os clientes se sintam atualizados sobre seus projetos, ou ainda será necessária uma comunicação humana recorrente? |
 
 </div>
-
----
-
-
-
-
 
 # Épicos e User Stories - Plataforma Inteli Junior
 
@@ -443,61 +426,78 @@ Como cliente, quero acessar o projeto contratado e acompanhar seu andamento.
 **Critérios de Aceite:**
 - Exibição de marcos do projeto.
 
-
-
 ---
-
 
 ## ⚙️ Requisitos Funcionais
 
-<!-- 
-Liste os requisitos funcionais do sistema, ou seja, o que o sistema deve fazer de forma objetiva. Pense em ações, comportamentos e regras que precisam estar presentes no produto final.
+### Cadastro, Login e Gestão de Permissões
+- RF01 - O sistema deve permitir o cadastro de usuários com diferentes níveis de permissão (presidência, diretores, membros, clientes).
+- RF02 - O sistema deve permitir o login de usuários autenticados com validação de permissões.
+- RF03 - O sistema deve permitir o login de clientes via chave de acesso segura.
+- RF04 - O sistema deve permitir que administradores gerenciem permissões dos usuários.
 
-Os Requisitos Funcionais (RFs) podem ser:
-- Inferidos a partir de User Stories.
-- Traduções técnicas de uma US, visando o ponto de vista da implementação.
-- Divisões mais específicas e técnicas de uma única US (ou seja, uma US pode originar vários RFs).
+### Gestão de Projetos
+- RF05 - O sistema deve permitir a criação de novos projetos preenchendo nome, descrição, tipo, link reposítorio, cliente associado, chave de acesso do cliente e data de entrega.
+- RF06 - O sistema deve permitir a edição de projetos ativos, salvando o histórico de alterações.
+- RF07 - O sistema deve permitir a exclusão de projetos, com alerta de confirmação para o usuário autorizado.
+- RF08 - O sistema deve disponibilizar um dashboard de projetos, exibindo status, datas e tipo de cada projeto.
+- RF09 - O sistema deve calcular e exibir automaticamente a barra de progresso dos projetos com base nas datas.
 
-Enquanto as US estão centradas nas necessidades do usuário, os RFs são mais voltados à engenharia e ao desenvolvimento. Servem como base para orientar o time técnico na hora de implementar funcionalidades específicas.
--->
+### Gestão de Parcerias
+- RF10 - O sistema deve permitir o cadastro de parcerias, com nome da empresa, tipo de relacionamento, data de início e status.
+- RF11 - O sistema deve permitir a edição e filtragem do status das parcerias (ativas/inativas).
+- RF12 - O sistema deve permitir visualizar o histórico de ativações por parceiro, com data e descrição.
 
-<!-- Dica 1: Numerar os requisitos ajuda na rastreabilidade durante o projeto. -->
+### Gestão de Pessoas e Desenvolvimento Individual
+- RF13 - O sistema deve exibir uma lista de membros com nome e foto.
+- RF14 - O sistema deve permitir acessar o perfil individual dos membros, exibindo objetivos, habilidades e forças.
+- RF15 - O sistema deve permitir a atualização do PDI (Plano de Desenvolvimento Individual) dos membros, registrando o histórico de alterações.
 
-<!-- Dica 2: Agrupar os RFs por página ou outro tipo de agrupamento pode ser muito útil. -->
+### Métricas, Relatórios e Dashboards
+- RF16 - O sistema deve exibir métricas de performance por área.
+- RF17 - O sistema deve permitir a geração de relatórios de eficiência em formato PDF e Excel.
+- RF18 - O sistema deve exibir um dashboard executivo consolidando os principais KPIs da empresa.
+- RF19 - O sistema deve permitir a exportação de dados e relatórios.
 
-<!-- 
-### Exemplo de Formato:
+### Gestão Comercial (Leads e Vendas)
+- RF20 - O sistema deve permitir o cadastro de leads e oportunidades com nome, contato e interesse.
+- RF21 - O sistema deve permitir a atualização do status das oportunidades (lead, oportunidade, contrato fechado).
+- RF22 - O sistema deve exibir uma dashboard de vendas com gráficos de conversão e pipeline.
+- RF23 - O sistema deve permitir visualizar o histórico de vendas por cliente.
 
-RF01 - O sistema deve permitir que usuários se cadastrem utilizando nome, e-mail institucional e senha.
-RF02 - O sistema deve permitir a criação de reservas de salas com data, horário e descrição.
-RF03 - O administrador deve poder visualizar e aprovar reservas pendentes.
-RF04 - O sistema deve enviar um e-mail automático de confirmação após uma reserva ser realizada.
--->
+### Acompanhamento Individual (para membros)
+- RF24 - O sistema deve listar os projetos e tarefas de cada membro, com filtros por status.
+- RF25 - O sistema deve permitir que membros atualizem seu próprio perfil e habilidades.
+- RF26 - O sistema deve disponibilizar a visualização e atualização das metas individuais no PDI.
 
-<!-- Preencha abaixo com os requisitos do seu projeto -->
+### Acesso Externo (Clientes)
+- RF27 - O sistema deve permitir que clientes visualizem o progresso do projeto contratado.
+- RF28 - O sistema deve apresentar entregas e marcos importantes do projeto para clientes.
 
-- RF01 - 
-- RF02 - 
-- RF03 - 
-- RF04 - 
+### Notificações Estratégicas
+- RF29 - O sistema deve notificar o vice-presidente sobre riscos em projetos estratégicos.
+- RF30 - O sistema deve exibir alertas de risco e progresso nos projetos-chave para a presidência e vice-presidência.
 
 ## 📱 Responsividade
 
 **O projeto será responsivo?**
-- [ ] Sim
+- [x] Sim
 - [ ] Não
 
 **Se sim, até qual ponto?**
 - [ ] Mobile-first
 - [ ] Adaptável para tablets
-- [ ] Desktops Grandes e notebooks menores
+- [x] Desktops Grandes e notebooks menores
 - [ ] Totalmente responsivo (desktop, tablet, mobile)
 
 ---
 
 ## 📌 Observações Finais
 
-<!-- Qualquer observação relevante, como restrições legais, técnicas, dependências externas ou riscos conhecidos. -->
+- **Dependências:** Integração com serviço de autenticação segura para login de clientes (ex: Auth0, Firebase Authentication).
+- **Riscos Conhecidos:** Possível resistência de membros em adotar a plataforma no início; mitigação prevista via treinamento interno.
+- **Considerações Legais:** Proteção de dados dos clientes conforme a LGPD (Lei Geral de Proteção de Dados).
+- **Prazos:** Algumas funcionalidades, como dashboards de vendas e métricas de áreas, podem ser entregues em fases posteriores.
 
 ---
 
