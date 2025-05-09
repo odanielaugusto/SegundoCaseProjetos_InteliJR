@@ -216,14 +216,29 @@ Como diretor de relações institucionais, quero cadastrar e gerenciar parcerias
 **Critérios de Aceite:**
 - Cadastro de nome da empresa, tipo de parceria, data de início e status.
 
-**US 2.2 - Classificação de Relacionamento**  
-- Como diretor, quero classificar as parcerias como "ativas" ou "inativas".
+---
+
+**US 2.2 - Edição de Parceria**
+
+- Como diretor, quero editar os dados de uma parceria cadastrada, para manter as informações sempre atualizadas e corrigir possíveis erros.
 
 **Critérios de Aceite:**
-- Status de relacionamento editável.
-- Filtragem de parcerias por status.
+- Permitir edição de: nome da empresa, tipo de parceria, data de início, e status (ativa/inativa).
+- Somente usuários com perfil de Diretor de RI podem realizar edições.
 
-**US 2.3 - Visualizar Histórico de Ativações**  
+---
+
+**US 2.3 - Exclusão de Parceria**
+- Como diretor, quero excluir uma parceria do sistema, para remover registros que foram inseridos incorretamente ou que não são mais relevantes.
+
+**Critérios de Aceite:**
+- Exclusão apenas disponível para usuários com permissão de Diretor.
+- Exigir confirmação antes da exclusão.
+- Parceria excluída não deve estar vinculada a ativações registradas (ou exigir exclusão prévia dessas ativações).
+
+---
+
+**US 2.4 - Visualizar Histórico de Ativações**  
 - Como diretor, quero ver o histórico de ativações realizadas com cada parceiro.
 
 **Critérios de Aceite:**
@@ -240,23 +255,47 @@ Como diretor de gestão de pessoas, quero acessar e atualizar as informações d
 ### User Stories:
 
 **US 3.1 - Visualizar Membros**  
-- Como diretor, quero visualizar uma lista com nome e foto dos membros.
+- Como diretor, quero visualizar uma lista com nome e foto dos membros para ter uma visão geral da equipe.
 
 **Critérios de Aceite:**
 - Exibição de todos os membros cadastrados com imagem e nome.
 
 **US 3.2 - Acessar Perfil do Membro**  
-- Como diretor, quero acessar o perfil de cada membro.
+- Como diretor, quero acessar o perfil de cada membro para analisar suas informações individuais.
 
 **Critérios de Aceite:**
 - Informações disponíveis: objetivos profissionais, habilidades e forças.
 
-**US 3.3 - Atualizar Informações de Desenvolvimento**  
-- Como diretor, quero editar informações do PDI de cada membro.
+--- 
+
+**US 3.3 - Solicitar Adição de Novo Membro e Criar Informações de Desenvolvimento**  
+- Como diretor de gestão de pessoas,  quero solicitar a adição de um novo membro ao sistema e já registrar suas informações iniciais, para iniciar o acompanhamento desde o ingresso e garantir sua integração ao processo de crescimento da EJ.
+
+**Critérios de Aceite:**
+- O diretor preenche um formulário com os dados do novo membro: nome completo, e-mail institucional, cargo, data de ingresso e foto.
+- A solicitação é enviada para aprovação do Presidente ou Vice-presidente.
+- Somente após a aprovação, o membro é oficialmente adicionado ao sistema.
+- Após a aprovação, o perfil do membro deve estar visível na lista geral.
+- A solicitação negada deve apresentar justificativa e notificar o diretor solicitante.
+
+---
+
+**US 3.4 - Atualizar Informações de Desenvolvimento**  
+- Como diretor, quero editar informações do cadastro de cada membro, para refletir mudanças nas metas e progresso individual.
 
 **Critérios de Aceite:**
 - Formulário de atualização de dados.
-- Histórico de alterações salvo.
+- Histórico de alterações salvo automaticamente.
+
+---
+
+**US 3.5 - Excluir Informações de Desenvolvimento**  
+- Como diretor, quero remover registros de desenvolvimento, para eliminar dados desatualizados, duplicados ou inválidos.
+
+**Critérios de Aceite:**
+- Exclusão com confirmação prévia.
+- Apenas o Diretor de Gestão de Pessoas pode excluir.
+- Exibição de alerta sobre a perda de dados históricos.
 
 ---
 
@@ -290,33 +329,41 @@ Como diretor administrativo-financeiro, quero visualizar métricas de performanc
 ## Epic 5: Gestão Comercial (Diretor de Vendas)
 
 **Descrição:**  
-Como diretor de vendas, quero cadastrar oportunidades, acompanhar clientes em potencial e registrar contratos fechados.
+CComo diretor de vendas, quero cadastrar, visualizar, atualizar e excluir informações comerciais para gerenciar o funil de vendas e fechar contratos com mais eficiência.
 
 ### User Stories:
 
-**US 5.1 - Cadastro de Leads e Oportunidades**  
-- Como diretor, quero cadastrar novos leads e oportunidades de vendas.
+**US 5.1 - Cadastro de Propostas**  
+- Como diretor, quero cadastrar novos leads e oportunidades de vendas para registrar potenciais clientes e iniciar o acompanhamento comercial.
 
 **Critérios de Aceite:**
-- Formulário de cadastro de lead com nome, contato e interesse.
+- Formulário de cadastro de lead com nome do cliente, serviço prestado, valor e status de andamento da venda.
 
 **US 5.2 - Atualização de Status de Vendas**  
 - Como diretor, quero atualizar o status das vendas em andamento.
 
 **Critérios de Aceite:**
-- Mudança de status de lead para oportunidade ou contrato fechado.
+- Mudança de status da proposta de enviada para em negociação ou aprovada.
 
 **US 5.3 - Dashboard de Vendas**  
-- Como diretor, quero visualizar a evolução das vendas no sistema.
+- Como diretor, quero visualizar a evolução das vendas no sistema, para acompanhar os resultados e analisar o funil comercial.
 
 **Critérios de Aceite:**
 - Gráficos de conversão e pipeline de vendas.
 
 **US 5.4 - Histórico de Clientes**  
-- Como diretor, quero ver o histórico de vendas para cada cliente.
+- Como diretor, quero ver o histórico de vendas para cada cliente, para entender interações passadas e tomar decisões informadas.
 
 **Critérios de Aceite:**
 - Visualização de contratos e negociações anteriores.
+
+**US 5.5 - Exclusão de Contrato**  
+- Como diretor de vendas, quero poder excluir registros de contratos, para manter o sistema limpo e evitar dados duplicados ou irrelevantes.
+
+**Critérios de Aceite:**
+- Exclusão apenas permitida para o Diretor de Vendas.
+- Contratos podem ser excluídos livremente com confirmação.
+- Ação deve gerar um log no histórico do sistema com data, autor e motivo.
 
 ---
 
