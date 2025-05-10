@@ -13,7 +13,7 @@ InteliHub – Plataforma de gestão e acompanhamento tanto do cliente quanto da 
 Inteli Júnior
 
 - **Responsável da Visão de Produto (PO):**
-João Dias, Felipe Teixeira, Daniel Augusto, Rayssa Guerra, Livia Negrini, Messias Olivindo, Rodrigo Ferraz.
+João Dias, Felipe Teixeira, Daniel Augusto, Rayssa Guedes, Livia Negrini, Messias Olivindo, Rodrigo Ferraz.
 
 ---
 
