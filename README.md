@@ -26,7 +26,7 @@ O projeto visa o desenvolvimento de uma **landing page institucional** e uma **p
 ## Integrantes do Projeto
 
 - **Daniel Augusto**
-- **Rayssa Guerra**
+- **Rayssa Guedes**
 - **Livia Negrini**
 - **Rodrigo Ferraz**
 - **Messias Olivindo**
