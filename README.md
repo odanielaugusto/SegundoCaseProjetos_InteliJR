@@ -24,7 +24,9 @@ O projeto visa o desenvolvimento de uma **landing page institucional** e uma **p
 - **Wireframe**: Projetado usando o Figma.
 
 ## Integrantes do Projeto
-- **Leunam Sousa**
-- **Christian Santos**
-- **Felipe Teixeira**
-- **João Dias**
+
+- **Daniel Augusto**
+- **Rayssa Guerra**
+- **Livia Negrini**
+- **Rodrigo Ferraz**
+- **Messias Olivindo**
