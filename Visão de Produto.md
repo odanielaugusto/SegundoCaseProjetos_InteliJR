@@ -13,39 +13,7 @@ InteliHub – Plataforma de gestão e acompanhamento tanto do cliente quanto da 
 Inteli Júnior
 
 - **Responsável da Visão de Produto (PO):**
-João Dias e Felipe Teixeira
-
-- **Duração Total Estimada:** 
-1 semana
-
-- **Período na Etapa de Design (estimado):** 
-3 dias
-
-- **Período na Etapa de Desenvolvimento (estimado):** 
-4 dias
-
----
-
-## ✅ Checklist de Entrada (para iniciar o projeto)
-
-- [ ] Reunião de Kickoff com o cliente realizada
-- [ ] Objetivo do projeto compreendido
-- [ ] Tecnologias necessárias mapeadas
-- [ ] Estimativa de esforço feita
-- [ ] Capacidade do time verificada
-- [ ] Escopo inicial do wireframe aprovado pelo cliente
-
----
-
-## 📤 Checklist de Saída (para encaminhar o projeto às próximas áreas)
-
-- [ ] Documento de Visão preenchido e validado
-- [ ] Matriz “é/não é/faz/não faz” definida
-- [ ] Wireframes (se aplicável) finalizados
-- [ ] Epics e User Stories redigidas
-- [ ] Datas de entrada/saída em cada área definidas
-- [ ] Contrato e escopo revisados e claros
-- [ ] Alinhamento com área de Design ou Desenvolvimento realizado
+João Dias, Felipe Teixeira, Daniel Augusto, Rayssa Guerra, Livia Negrini, Messias Olivindo, Rodrigo Ferraz.
 
 ---
 
@@ -149,8 +117,6 @@ Desenvolver:
 
 # Épicos e User Stories - Plataforma Inteli Junior
 
----
-
 ## Epic 1: Gestão de Projetos (Diretor de Projetos)
 
 **Descrição:**  
@@ -159,7 +125,7 @@ Como diretor de projetos, quero um ambiente para gerenciar projetos da minha ár
 ### User Stories:
 
 **US 1.1 - Criar Projeto**  
-- Como diretor de projetos, quero criar projetos preenchendo nome, descrição, tipo, links relevantes, membros, data de entrega e cliente associado.
+- Como diretor de projetos, quero criar projetos preenchendo nome, tipo, links relevantes, membros, data de entrega e cliente associado.
 
 **Critérios de Aceite:**
 - Formulário de criação com todos os campos listados.
@@ -171,7 +137,7 @@ Como diretor de projetos, quero um ambiente para gerenciar projetos da minha ár
 
 **Critérios de Aceite:**
 - Edição disponível apenas para projetos ativos.
-- Histórico de modificações salvo.
+
 
 **US 1.3 - Excluir Projeto**  
 - Como diretor de projetos, quero excluir projetos que não são mais relevantes.
@@ -245,6 +211,8 @@ Como diretor de relações institucionais, quero cadastrar e gerenciar parcerias
 - Lista de ativações vinculada ao cadastro do parceiro.
 - Data e descrição da ativação.
 
+
+
 ---
 
 ## Epic 3: Gestão de Pessoas (Diretor de Gestão de Pessoas)
@@ -255,10 +223,10 @@ Como diretor de gestão de pessoas, quero acessar e atualizar as informações d
 ### User Stories:
 
 **US 3.1 - Visualizar Membros**  
-- Como diretor, quero visualizar uma lista com nome e foto dos membros para ter uma visão geral da equipe.
+- Como diretor, quero visualizar uma lista com nome e informações essenciais dos membros para ter uma visão geral da equipe.
 
 **Critérios de Aceite:**
-- Exibição de todos os membros cadastrados com imagem e nome.
+- Exibição de todos os membros cadastrados com suas informações essenciais.
 
 **US 3.2 - Acessar Perfil do Membro**  
 - Como diretor, quero acessar o perfil de cada membro para analisar suas informações individuais.
@@ -311,19 +279,6 @@ Como diretor administrativo-financeiro, quero visualizar métricas de performanc
 
 **Critérios de Aceite:**
 - Indicadores claros e atualizados periodicamente.
-
-**US 4.2 - Relatórios de Eficiência**  
-- Como diretor, quero gerar relatórios de performance das áreas.
-
-**Critérios de Aceite:**
-- Relatórios exportáveis em PDF ou Excel.
-
-**US 4.3 - Exportar Relatórios**  
-- Como usuário, quero exportar os dados em formatos compatíveis.
-
-**Critérios de Aceite:**
-- Botão de exportação disponível e funcional.
-
 ---
 
 ## Epic 5: Gestão Comercial (Diretor de Vendas)
@@ -334,7 +289,7 @@ CComo diretor de vendas, quero cadastrar, visualizar, atualizar e excluir inform
 ### User Stories:
 
 **US 5.1 - Cadastro de Propostas**  
-- Como diretor, quero cadastrar novos leads e oportunidades de vendas para registrar potenciais clientes e iniciar o acompanhamento comercial.
+- Como diretor, quero cadastrar e registrar potenciais clientes e iniciar o acompanhamento comercial.
 
 **Critérios de Aceite:**
 - Formulário de cadastro de lead com nome do cliente, serviço prestado, valor e status de andamento da venda.
@@ -351,19 +306,6 @@ CComo diretor de vendas, quero cadastrar, visualizar, atualizar e excluir inform
 **Critérios de Aceite:**
 - Gráficos de conversão e pipeline de vendas.
 
-**US 5.4 - Histórico de Clientes**  
-- Como diretor, quero ver o histórico de vendas para cada cliente, para entender interações passadas e tomar decisões informadas.
-
-**Critérios de Aceite:**
-- Visualização de contratos e negociações anteriores.
-
-**US 5.5 - Exclusão de Contrato**  
-- Como diretor de vendas, quero poder excluir registros de contratos, para manter o sistema limpo e evitar dados duplicados ou irrelevantes.
-
-**Critérios de Aceite:**
-- Exclusão apenas permitida para o Diretor de Vendas.
-- Contratos podem ser excluídos livremente com confirmação.
-- Ação deve gerar um log no histórico do sistema com data, autor e motivo.
 
 ---
 
@@ -381,70 +323,42 @@ Como presidente, quero visualizar o panorama geral da empresa com métricas estr
 - KPIs estratégicos exibidos em painel único.
 
 **US 6.2 - Acesso a Relatórios Estratégicos**  
-- Como presidente, quero acessar relatórios completos.
+- Como presidente, quero acessar outras áreas da empresa para enxergar seus dados de performance.
 
 **Critérios de Aceite:**
-- Relatórios segmentados por área.
+- Acesso a outras áreas da empresa.
 
-**US 6.3 - Gestão de Indicadores de Sucesso**  
-- Como presidente, quero acompanhar indicadores-chave.
-
-**Critérios de Aceite:**
-- Atualização periódica e comparativos entre períodos.
 
 ---
 
 ## Epic 7: Suporte à Gestão Estratégica (Vice-Presidente)
 
 **Descrição:**  
-Como vice-presidente, quero acessar relatórios e indicadores estratégicos para apoiar a presidência.
+Como vice-presidente, quero acessar informações de performance das outras áreas e indicadores estratégicos para apoiar a presidência.
 
 ### User Stories:
 
 **US 7.1 - Visualizar Relatórios de Performance**  
-- Como vice-presidente, quero acompanhar relatórios de performance de cada área.
+- Como vice-presidente, quero acompanhar a performance de cada área.
 
 **Critérios de Aceite:**
-- Relatórios acessíveis em painel restrito.
-
-**US 7.2 - Acesso a Progresso de Projetos-Chave**  
-- Como vice-presidente, quero ver a evolução dos projetos estratégicos.
-
-**Critérios de Aceite:**
-- Exibição de progresso e alertas de risco.
-
-**US 7.3 - Notificações de Riscos Estratégicos**  
-- Como vice-presidente, quero ser notificado sobre projetos críticos.
-
-**Critérios de Aceite:**
-- Sistema de alertas integrado.
+- Acesso a outras áreas das empresa junior.
 
 ---
 
 ## Epic 8: Acompanhamento Individual (Membros de Área)
 
 **Descrição:**  
-Como membro de uma área, quero acessar meus projetos e tarefas
+Como membro de uma área, quero acessar a interface da minha área.
 
 ### User Stories:
 
-**US 8.1 - Visualizar Meus Projetos/Tarefas**  
-- Como membro, quero acessar rapidamente meus projetos.
-
-**Critérios de Aceite:**
-- Listagem clara e filtros por status.
-
-**US 8.2 - Atualizar Minhas Informações Pessoais**  
+**US 8.1 - Atualizar Minhas Informações Pessoais**  
 - Como membro, quero atualizar meu perfil e habilidades.
 
 **Critérios de Aceite:**
 - Edição de informações pessoais com histórico.
 
-**US 8.3 - Acessar Meu Plano de Desenvolvimento**  
-- Como membro, quero acompanhar meu próprio PDI.
-
-**Critérios de Aceite:**
-- Visualização e atualização de metas.
 
 ---
 
@@ -473,69 +387,189 @@ Como cliente, quero acessar o projeto contratado e acompanhar seu andamento.
 **Critérios de Aceite:**
 - Exibição de marcos do projeto.
 
+## Epic 10: Gestão de Eventos (Diretor de Relações Institucionais)
+
+**Descrição:**  
+Como diretor de relações institucionais, quero criar, editar, excluir e acompanhar eventos institucionais (parcerias, ativações, workshops, feiras, etc.), para organizar o calendário da Inteli Júnior e garantir que toda a equipe esteja alinhada às próximas iniciativas.
+
+### User Stories:
+
+**US 10.1 – Criar Evento**  
+- Como diretor de RI, quero cadastrar um novo evento preenchendo nome, tipo, data, horário, local, prioridade e parceiro associado.
+
+**Critérios de Aceite:**
+- Formulário de criação com campos obrigatórios: nome, tipo, data, horário, local e prioridade.    
+
 ---
 
+**US 10.2 – Editar Evento**  
+- Como diretor de RI, quero editar as informações de um evento já cadastrado para manter os dados sempre atualizados.
+
+**Critérios de Aceite:**
+- Permitir edição de todos os campos, exceto ID interno.  
+---
+
+**US 10.3 – Excluir Evento**  
+- Como diretor de RI, quero excluir eventos cancelados ou criados erroneamente para manter o quadro de eventos limpo.
+
+**Critérios de Aceite:**
+- Exclusão restrita aos usuários com papel Diretor de RI ou superior.  
+
+
+---
+
+**US 10.4 – Visualizar Calendário de Eventos**  
+- Como usuário autorizado, quero visualizar um quadro mensal com todos os eventos, para ter uma visão clara das próximas atividades.
+
+**Critérios de Aceite:**
+- Exibição em modo calendário (mensal) e modo lista.  
+- Eventos coloridos por prioridade (baixa, média, alta).  
+- Contador de “Eventos Planejados” visível acima do calendário.
+
+---
+
+**US 10.5 – Checklist de Infraestrutura do Evento**  
+- Como diretor de RI, quero adicionar um checklist de tarefas (infraestrutura, comunicação, logística) a cada evento, para garantir que nada seja esquecido.
+
+**Critérios de Aceite:**
+- Permitir criar, editar, excluir itens de checklist vinculados ao evento.  
+- Marcar itens como concluídos/pendentes.  
+
+
+
+
+---
+## Epic 11: Administração de Usuários & Permissões (Presidência / Vice-Presidência)
+
+**Descrição:**  
+Como presidente ou vice-presidente, quero gerenciar contas, papéis e permissões de todos os usuários da plataforma, garantindo que o acesso seja seguro, atualizado e compatível com as responsabilidades de cada membro e cliente.
+
+### User Stories:
+
+**US 11.1 – Listar Usuários**  
+- Como presidente ou vice-presidente, quero visualizar uma lista de todos os usuários membros.
+
+**Critérios de Aceite:**
+- Tabela com todos os dados essenciais de todos os membros da empresa.
+
+
+---
+
+**US 11.2 – Alterar Papel e Permissões**  
+- Como presidente ou vice-presidente, quero alterar o papel (presidência, diretor, membro, cliente) de um usuário para ajustar seus níveis de acesso.
+
+**Critérios de Aceite:**
+- Modal de edição com seleção de novo papel.  
+- Confirmação antes de aplicar mudanças.  
+- Log de alteração salvo com usuário, data e papel antigo/novo.  
+- Mudança refletida imediatamente nas permissões de menu e funcionalidades.
+
+---
+
+**US 11.3 – Ativar / Desativar Usuário**  
+- Como presidente ou vice-presidente, quero ativar ou desativar temporariamente uma conta para controlar o acesso sem perder histórico de dados.
+
+**Critérios de Aceite:**
+- Botão de alternância Ativar/Desativar na lista de usuários.  
+- Confirmação via modal com lembrete de que o usuário não poderá acessar enquanto estiver inativo.  
+- Status atualizado em tempo real e exibido na coluna “Status”.  
+- Ação registrada em log administrativo.
+
+---
+
+**US 11.4 – Aprovar ou Rejeitar Novo Membro**  
+- Como presidente ou vice-presidente, quero aprovar ou rejeitar solicitações de novos membros enviadas pelo Diretor de Gestão de Pessoas.
+
+**Critérios de Aceite:**
+- Seção “Solicitações Pendentes” com detalhes do candidato.  
+- Botões “Aprovar” e “Rejeitar” com campo de justificativa (obrigatório ao rejeitar).  
+- Após aprovação, conta é criada e aparece na lista geral de usuários.
+
+
+---
 ## ⚙️ Requisitos Funcionais
 
-### Cadastro, Login e Gestão de Permissões
-- RF01 - O sistema deve permitir o cadastro de usuários com diferentes níveis de permissão (presidência, diretores, membros, clientes).
-- RF02 - O sistema deve permitir o login de usuários autenticados com validação de permissões.
-- RF03 - O sistema deve permitir o login de clientes via chave de acesso segura.
-- RF04 - O sistema deve permitir que administradores gerenciem permissões dos usuários.
+### Autenticação & Permissões (Presidência / Vice-Presidência)
+- **RF01** – Cadastro de usuários com papéis: presidência, vice-presidência, diretor, membro e cliente.  
+  _Rel. US 11.1_
+- **RF02** – Login autenticado, verificando papel e permissões.  
+  _Rel. US 9.1, 11.1_
+- **RF03** – Login de clientes via token de acesso exclusivo por projeto.  
+  _Rel. US 1.5, 9.1_
+- **RF04** – Tela de **lista de usuários** (filtros, paginação, busca).  
+  _Rel. US 11.1_
+- **RF05** – Alterar papéis/permissões em tempo real, com log de auditoria.  
+  _Rel. US 11.2_
+- **RF06** – Ativar / desativar contas, mantendo histórico.  
+  _Rel. US 11.3_
+- **RF07** – Aprovar ou rejeitar solicitações de novos membros (justificativa + notificação).  
+  _Rel. US 11.4_
+- **RF08** – Resetar senha via link seguro (e-mail, validade 60 min).  
+  _Rel. US 11.5_
+- **RF09** – Disponibilizar **logs administrativos** (alterações de papel, ativações, exclusões).  
+  _Rel. US 11.2, 11.3_
 
-### Gestão de Projetos
-- RF05 - O sistema deve permitir a criação de novos projetos preenchendo nome, descrição, tipo, link reposítorio, cliente associado, chave de acesso do cliente e data de entrega.
-- RF06 - O sistema deve permitir a edição de projetos ativos, salvando o histórico de alterações.
-- RF07 - O sistema deve permitir a exclusão de projetos, com alerta de confirmação para o usuário autorizado.
-- RF08 - O sistema deve disponibilizar um dashboard de projetos, exibindo status, datas e tipo de cada projeto.
-- RF09 - O sistema deve calcular e exibir automaticamente a barra de progresso dos projetos com base nas datas.
+### Gestão de Projetos (Diretoria de Projetos)
+- **RF10** – Criar projeto (nome, tipo, data de entrega obrigatórios).  
+  _Rel. US 1.1_
+- **RF11** – Editar projetos ativos, salvando histórico de modificações.  
+  _Rel. US 1.2_
+- **RF12** – Excluir projetos com confirmação; restrito a usuários autorizados.  
+  _Rel. US 1.3_
+- **RF13** – Exibir **dashboard de projetos** (ativos, fora do prazo, próximos da entrega, por tipo).  
+  _Rel. US 1.4_
+- **RF14** – Calcular **barra de progresso automática** (data atual × data de entrega).  
+  _Rel. US 1.6_
+- **RF15** – Visualização restrita do projeto ao cliente mediante token.  
+  _Rel. US 1.5_
 
-### Gestão de Parcerias
-- RF10 - O sistema deve permitir o cadastro de parcerias, com nome da empresa, tipo de relacionamento, data de início e status.
-- RF11 - O sistema deve permitir a edição e filtragem do status das parcerias (ativas/inativas).
-- RF12 - O sistema deve permitir visualizar o histórico de ativações por parceiro, com data e descrição.
+### Gestão de Parcerias & Eventos (Diretoria de RI)
+- **RF16** – CRUD de parcerias (nome, tipo, data início, status).  
+  _Rel. US 2.1–2.3_
+- **RF17** – Exibir **histórico de ativações** por parceiro (data, descrição).  
+  _Rel. US 2.4_
+- **RF18** – CRUD de **eventos** (nome, tipo, data, horário, local, prioridade, parceiro).  
+  _Rel. US 10.1–10.3_
+- **RF19** – Exibir **calendário/quadro** de eventos com filtros, cores por prioridade, contador “Eventos Planejados”.  
+  _Rel. US 10.4_
+- **RF20** – Gestão de **checklist de infraestrutura** por evento (itens, status, progresso %).  
+  _Rel. US 10.5_
 
-### Gestão de Pessoas e Desenvolvimento Individual
-- RF13 - O sistema deve exibir uma lista de membros com nome e foto.
-- RF14 - O sistema deve permitir acessar o perfil individual dos membros, exibindo objetivos, habilidades e forças.
-- RF15 - O sistema deve permitir a atualização do PDI (Plano de Desenvolvimento Individual) dos membros, registrando o histórico de alterações.
+### Gestão de Pessoas (Diretoria de Gestão de Pessoas)
+- **RF21** – Listar membros com informações essenciais (foto, nome, cargo).  
+  _Rel. US 3.1_
+- **RF22** – Exibir **perfil completo** de cada membro (objetivos, habilidades, forças).  
+  _Rel. US 3.2_
+- **RF23** – Fluxo de **solicitar novo membro** (formulário + aprovação).  
+  _Rel. US 3.3_
 
-### Métricas, Relatórios e Dashboards
-- RF16 - O sistema deve exibir métricas de performance por área.
-- RF17 - O sistema deve permitir a geração de relatórios de eficiência em formato PDF e Excel.
-- RF18 - O sistema deve exibir um dashboard executivo consolidando os principais KPIs da empresa.
-- RF19 - O sistema deve permitir a exportação de dados e relatórios.
+### Métricas, Relatórios & Financeiro (Diretoria Admin-Fin)
+- **RF24** – Exibir **métricas de performance financeira** ao diretor Admin-Fin.  
+  _Rel. US 4.1_
+- **RF25** – Painel de **fluxo de caixa mensal** (entradas, saídas, saldo) + projeção anual.  
+  _Rel. Métricas de Finanças – comp. US 4.1_
 
-### Gestão Comercial (Leads e Vendas)
-- RF20 - O sistema deve permitir o cadastro de leads e oportunidades com nome, contato e interesse.
-- RF21 - O sistema deve permitir a atualização do status das oportunidades (lead, oportunidade, contrato fechado).
-- RF22 - O sistema deve exibir uma dashboard de vendas com gráficos de conversão e pipeline.
-- RF23 - O sistema deve permitir visualizar o histórico de vendas por cliente.
+### Gestão Comercial (Diretoria de Vendas)
+- **RF26** – Cadastro de leads/propostas (cliente, serviço, valor, status).  
+  _Rel. US 5.1_
+- **RF27** – Atualização do **status de vendas** com histórico.  
+  _Rel. US 5.2_
+- **RF28** – Dashboard de vendas (gráficos de conversão, pipeline).  
+  _Rel. US 5.3_
+- **RF29** – Histórico de contratos/negociações por cliente.  
+  _Rel. US 5.4_
+- **RF30** – Exclusão de contrato com confirmação e log.  
+  _Rel. US 5.5_
 
-### Acompanhamento Individual (para membros)
-- RF24 - O sistema deve listar os projetos e tarefas de cada membro, com filtros por status.
-- RF25 - O sistema deve permitir que membros atualizem seu próprio perfil e habilidades.
-- RF26 - O sistema deve disponibilizar a visualização e atualização das metas individuais no PDI.
+### Gestão Estratégica (Presidência / Vice-Presidência)
+- **RF31** – Acesso a **relatórios estratégicos** segmentados por área.  
+  _Rel. US 6.2, 7.1_
 
-### Acesso Externo (Clientes)
-- RF27 - O sistema deve permitir que clientes visualizem o progresso do projeto contratado.
-- RF28 - O sistema deve apresentar entregas e marcos importantes do projeto para clientes.
-
-### Notificações Estratégicas
-- RF29 - O sistema deve notificar o vice-presidente sobre riscos em projetos estratégicos.
-- RF30 - O sistema deve exibir alertas de risco e progresso nos projetos-chave para a presidência e vice-presidência.
-
-## 📱 Responsividade
-
-**O projeto será responsivo?**
-- [x] Sim
-- [ ] Não
-
-**Se sim, até qual ponto?**
-- [ ] Mobile-first
-- [ ] Adaptável para tablets
-- [x] Desktops Grandes e notebooks menores
-- [ ] Totalmente responsivo (desktop, tablet, mobile)
+### Acesso Externo – Clientes
+- **RF32** – Cliente visualiza **timeline** do projeto contratado (entregas, marcos).  
+  _Rel. US 9.2, 9.3_
+- **RF33** – Restrição de visualização apenas aos dados do projeto associado ao token.  
+  _Rel. US 1.5, 9.1_
 
 ---
 
@@ -547,4 +581,7 @@ Como cliente, quero acessar o projeto contratado e acompanhar seu andamento.
 - **Prazos:** Algumas funcionalidades, como dashboards de vendas e métricas de áreas, podem ser entregues em fases posteriores.
 
 ---
+
+
+
 
